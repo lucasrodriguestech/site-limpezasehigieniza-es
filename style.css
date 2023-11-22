@@ -1,0 +1,464 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.topbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(36, 36, 62);
+    height:59px;
+}
+.topbar-container h4 {
+    color: #fff;
+}
+.topbar-container p {
+    font-size: 0.7rem;
+}
+
+.contato-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 12px;
+}
+
+.atendimento-topbar {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    gap: 12px;
+}
+
+.topbar-icon-container {
+    padding: 5px;
+    background-color: rgba(183, 183, 181, 0.3);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 95px;
+    flex-wrap: nowrap;
+}
+
+header img {
+    width: 150px;
+}
+
+.links-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 12px;
+}
+
+.links-container a{
+    color: rgb(36, 36, 62);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.links-container-faleconosco-container {
+    background-color: rgb(36, 36, 62);
+    color: #fff;
+    border-radius: 20px;
+    padding: 0 15px;
+}
+
+.links-container-faleconosco-container a {
+    color: #fff;
+    
+}
+
+.banner-container {
+    background-image: url(./assets/banner.png);
+    min-height: 75vh;
+    background-position:unset;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    padding-top: 105px;
+    padding-left: 105px;
+    gap: 13px;
+    background-size: cover;
+}
+
+.banner-container h1 {
+    color: rgb(36, 36, 62);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 1000; /* Use um valor suportado, como 800 ou 900 */
+    font-size: 3.5rem; /* Ajuste conforme necessário para o tamanho desejado */
+    letter-spacing: -4px; /* Ajuste conforme necessário */
+    
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    max-width: 550px;
+}
+
+
+
+
+
+.banner-container p {
+    color: rgb(36, 36, 62);
+    max-width: 600px;
+    font-weight: 600;
+}
+
+.banner-container button {
+    background-color: rgb(36, 36, 62);
+    border: none;
+    padding: 9px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.cards-container {
+    width: 100%;
+    min-height: 50vh;
+    margin-top: -115px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 23px;
+}
+
+.card-container {
+    width: 450px;
+    height: 350px;
+    background-color:  rgb(36, 36, 62);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    text-align: center;
+    border-radius: 3px;
+    padding: 47px;
+    gap: 22px;
+}
+
+.text-card-container {
+
+}
+
+.servicos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 55px;
+    margin-bottom: 45px;
+    padding: 0 35px 0 35px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.servicos-container p, h4, h1 {
+    color: rgb(85, 85, 96);
+}
+
+.servicos-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px;
+    gap: 19px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.servicos-card-container {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+
+.pagamentos-container {
+    background-color: rgb(230, 226, 226);
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: start;
+    padding: 15px 150px 15px 150px;
+    
+}
+.pagamentos-container h1 {
+    font-size: 2.3rem;
+    padding: 15px 0 25px 0;
+}
+
+.pagamentos-container  h3, i {
+    color: rgba(14, 41, 96, 0.729);
+}
+
+.pagamentos-container img {
+    width: 250px;
+}
+.faleconosco-container {
+    background-image: url(./assets/banner-contato.png);
+    min-height: 45vh;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 73px;
+    background-size: cover;
+    padding: 55px 25px 25px 25px;
+}
+
+.faleconosco-container form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 13px;
+}
+
+
+
+.faleconosco-container input, textarea {
+    color: rgb(255, 255, 255);
+    padding-left: 10px;
+    background-color: rgba(14, 41, 96, 0.729);
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+
+.faleconosco-container button {
+    width: 120px;
+    height: 35px;
+    color: rgba(14, 41, 96, 0.729);
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.faleconosco-container textarea {
+    min-width: 400px;
+    max-width: 400px;
+    min-height: 200px;
+    max-height: 200px;
+    
+    
+}
+
+.faleconosco-container h1 {
+    color: #fff;
+    font-weight: 600;
+    
+}
+
+footer {
+    background-color: rgb(198, 183, 156);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 30vh;
+    flex-wrap: wrap;
+    gap: 29px;
+    padding: 35px;
+}
+
+footer p, b {
+    color: rgb(91, 86, 86);
+}
+.direitos-container  a {
+    background-color: rgb(198, 183, 156);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    flex-wrap: nowrap;
+    text-align: center;
+    color: #000;
+    padding: 10px;
+}
+.icon-dropdown {
+    display: none;
+}
+
+.dropdown {
+    display: none;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    position: absolute;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 35px;
+    top: 0;
+    padding: 55px;
+    opacity: 1;
+    animation: fadeIn 0.5s ease;
+}
+
+.dropdown a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+
+}
+
+.close-container {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-weight: 600;
+}
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+@keyframes fadeInOut {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Aplique a animação à classe .dropdown */
+.dropdown {
+    animation: fadeInOut 0.5s ease;
+}
+
+.dropdown.exiting {
+    animation: fadeOut 0.5s ease;
+}
+@media (max-width: 600px) {
+    .links-container {
+        display: none;
+    }
+
+    .icon-dropdown {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: rgb(202, 193, 193);
+        border: none;
+        width: 45px;
+        height: 45px;
+        pointer-events: auto;
+    }
+
+    .topbar-container {
+        display: none;
+        
+    } 
+
+    .banner-container {
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+        text-wrap: wrap;
+        align-items: center;
+        gap: 35px;
+    }
+
+    .banner-container h1 {
+        font-size: 3rem;
+    }
+
+    .cards-container {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card-container {
+        padding: 15px;
+        height: 350px;
+        align-items: center;
+    }
+    .pagamentos-container {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        text-wrap: wrap;
+        align-items: center;
+        gap: 5px;
+    }
+    .faleconosco-container {
+        text-align: center;
+    }
+
+    .faleconosco-container h1 {
+        font-size: 1.7rem;
+    }
+    
+    
+
+    .faleconosco-container, form, textarea {
+        align-items: center;
+        justify-content: center;
+        padding: 25px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+
+    .faleconosco-container input, textarea {
+        color: rgb(255, 255, 255);
+        padding-left: 10px;
+        background-color: rgba(14, 41, 96, 0.729);
+        border: none;
+        border-bottom: 1px solid #fff;
+    }
+
+    
+    .faleconosco-container textarea {
+        min-width: 250px;
+        max-width: 250px;
+        min-height: 200px;
+        max-height: 200px;
+        
+        
+    } 
+   
+
+    
+
+    
+}

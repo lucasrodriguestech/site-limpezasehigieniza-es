@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <script src="https://kit.fontawesome.com/720eb943ab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="topbar-container">
+        <div class="contato-topbar">
+            <div class="topbar-icon-container">
+                <i class="fa-regular fa-message"></i>
+            </div>
+            
+            <div class="contato-topbar-texto">
+                <h4>Fale conosco!</h4>
+                <p>(43) 98486-6569</p>
+            </div>
+        </div>
+
+        <div class="atendimento-topbar">
+            <div class="topbar-icon-container">
+                <i class="fa-solid fa-phone-volume"></i>   
+            </div>
+            
+            <div class="atendimento-topbar-texto">
+                <h4>Atendimento</h4>
+                <p>Seg a sex das 9 às 18 - Sáb das 8 às 12 horas</p>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="logo-container">
+            <img src="../../assets/logo horizontal.png" alt="">
+        </div>
+
+        <button class="icon-dropdown">
+            <img src="../../assets/hamburguer icon.png" alt="" style="width: 25px; cursor: pointer; " onclick="dropdownToggle()">         
+
+        </button>
+
+        <div class="links-container">
+            <div>
+                <a href="../../index.html">home</a>    
+            </div>
+            <div>
+                <a href="../sobre/index.html">sobre nós</a> 
+            </div>
+            
+            <div>
+                <a href="../servicos/">Serviços</a>
+            </div>
+            
+            
+            <div class="links-container-faleconosco-container">
+                <a href="#faleconosco-container" >Fale conosco</a>
+            </div>
+            
+        </div>
+    </header>
+
+    <div class="dropdown">
+        <div onclick="dropdownToggle()" class="close-container">X</div>
+        <a href="../../index.html">home</a>
+        <a href="../sobre/index.html">sobre nós</a>
+        <a href="../servicos/index.html">Serviços</a>
+        <div class="links-container-faleconosco-container">
+           <a href="#faleconosco-container">Fale conosco</a>
+        </div>
+     </div>
+    
+    <div class="banner-container">
+        <h1>CONTATO</h1>
+
+        <div class="dropdown-container">
+            <i></i>
+        </div>
+    </div>
+
+    
+    <div class="faleconosco-container" id="faleconosco-container">
+        <div class="dados-container">
+            <div class="card-container">
+                <i class="fa-regular fa-map fa-xl"></i>
+                <p><b>Endereço:</b> Av. Prefeito Milton Ribeiro de Menezes 715 / Londrina - Paraná</p>
+            </div>
+            
+            <div class="card-container">
+                <i class="fa-solid fa-phone fa-xl"></i>
+                <p><b>Telefone:</b> (43) 98486-6569</p>    
+            </div>
+            
+            <div class="card-container">
+                <i class="fa-solid fa-user-tie"></i>
+                <p><b>Atendimento:</b> Segunda a sexta das 9 às 18 horas e sábado das 8 às 12 horas</p>
+            </div>
+        </div>
+
+        <form name="contact" method="POST" data-netlify="true">
+            <h2 >Envie uma mensagem</h2>
+            <p>Solicite um orçamento, envie uma dúvida ou sugestão.</p>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+            <input type="text" name="contato" id="contato" placeholder="Digite seu telefone para contato">
+            <textarea name="mensagem" value="mensagem" cols="30" rows="5" placeholder="Escreva sua mensagem"></textarea>
+            <button>Enviar</button>
+        </form>
+    </div>
+    
+    
+
+    <footer>
+        <img src="../../assets/logo horizontal.png" alt="">
+
+        <div class="footer-contato-container-texto">
+             <p><b>CNPJ:</b>47.609.617-0001-72</p>
+             <p><b>Endereço</b>: Londrina-pr</p>
+             <p><b>Email</b>: valemulticlean@gmail.com</p>
+              
+
+        </div>
+        
+        
+    </footer>
+    <div class="direitos-container">
+        <a href=""><b>Desenvolvidor por Lucas Rodrigues | </b>Lucas Rodrigues Tech</a>
+    </div>
+
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
